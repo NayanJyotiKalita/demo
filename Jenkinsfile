@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo 'BRANCH - main'
                 echo 'Building the application...'
                 sh 'pwd'                                // sh pwd doesnot work, it has to be sh 'pwd
                 sh 'ls'
